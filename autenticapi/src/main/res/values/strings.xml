@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name1">Autentic</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_autentic">Autentic</string>
+    <!-- M1 Card -->
+    <string name="setpwd">Set Password</string>
+    <string name="setautoread">Set Auto Read</string>
+    <string name="setmanualread">Set Manual Read</string>
+    <string name="readcard">Read Card</string>
+    <string name="writecard">Write Card</string>
+    <string name="lector">´Conectar Lector</string>
+    <string name="settings">Settings</string>
+    <string name="back">back</string>
+    <!-- Settings -->
+    <string name="english">English</string>
+    <string name="chinese">Chinese</string>
+    <string name="plaintext">Plain Text</string>
+    <string name="des">3DES</string>
+    <string name="dukpt">DUKPT</string>
+    <string name="wsn">Write SN</string>
+    <string name="rsn">Read SN</string>
+    <string name="clear">Clear Param</string>
+    <string name="backmain">Back to the main page</string>
+    <string-array name="atributos_persona">
+        <item>Listar Todo</item>
+        <item>Id</item>
+        <item>fullname</item>
+        <item>age</item>
+    </string-array>
+    <string-array name="atributos_sitio">
+        <item>Listar Todo</item>
+        <item>descripcion</item>
+        <item>url</item>
+     </string-array>
+</resources>

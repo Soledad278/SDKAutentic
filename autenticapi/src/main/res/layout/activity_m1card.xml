@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content"
+    android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical"
+	tools:context=".ui.M1CardActivity"
+	android:background="@android:color/white">
+
+
+	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:id="@+id/relativeLayout"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:background="@android:color/white" />
+
+	<TextView android:id="@+id/usuario"
+        android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:layout_marginLeft="100dp"
+        android:layout_marginRight="5dip"
+		android:singleLine="true" android:minLines="1" android:maxLines="1"
+		android:textSize="14sp" android:textColor="@color/dim_foreground_material_dark" android:scrollbars="vertical"
+		android:visibility="visible"
+		android:text=" Usuario"
+		android:layout_marginTop="48dp"
+		android:layout_below="@+id/line1"
+		android:layout_alignParentEnd="false" />
+
+	<TextView android:id="@+id/serial"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:layout_marginLeft="5dip"
+		android:layout_marginRight="5dip"
+		android:singleLine="true" android:minLines="1" android:maxLines="1"
+		android:textSize="14sp" android:textColor="@color/dim_foreground_material_dark" android:scrollbars="vertical"
+		android:visibility="visible"
+		android:layout_marginTop="8dp"
+		android:text="SN"
+		android:layout_below="@+id/usuario"
+		android:layout_alignStart="@+id/usuario"
+		android:layout_marginBottom="2dp" />
+
+	<View android:id="@+id/line1"
+		android:layout_width="fill_parent"
+		android:layout_height="1dp"
+		android:background="@color/switch_thumb_disabled_material_light"
+		android:layout_below="@+id/imageView4"
+		android:layout_alignParentStart="true" />
+
+	<TextView android:id="@+id/Titulo"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:singleLine="true" android:minLines="1" android:maxLines="1"
+		android:text="" android:textSize="14sp" android:textColor="@color/black" android:scrollbars="vertical"
+		android:visibility="visible"
+		android:contentDescription="Datos Tarjeta"
+		android:enabled="false"
+		android:focusable="false"
+		android:focusableInTouchMode="false"
+		android:elegantTextHeight="false"
+		android:layout_alignBaseline="@+id/expdate"
+		android:layout_alignBottom="@+id/expdate"
+	 />
+	<TextView android:id="@+id/cardno"
+	android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:singleLine="true" android:minLines="1" android:maxLines="1"
+		android:textSize="14sp" android:textColor="@color/dim_foreground_material_dark" android:scrollbars="vertical"
+	android:visibility="visible"
+		android:text="cardno"
+		android:layout_marginTop="6dp"
+		android:layout_below="@+id/Titulo"
+		android:layout_alignStart="@+id/expdate" />
+
+	<TextView android:id="@+id/holder"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:singleLine="true" android:minLines="1" android:maxLines="1"
+		android:textSize="14sp" android:textColor="@color/dim_foreground_material_dark" android:scrollbars="vertical"
+		android:visibility="visible"
+		android:text=" Emisor"
+		android:layout_below="@+id/cardno"
+		android:layout_alignEnd="@+id/serial"
+		android:layout_alignStart="@+id/usuario"
+		android:layout_marginTop="6dp" />
+
+	<TextView android:id="@+id/expdate"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:singleLine="true" android:minLines="1" android:maxLines="1"
+		android:text="expdate" android:textSize="14sp" android:textColor="@color/dim_foreground_material_dark" android:scrollbars="vertical"
+		android:visibility="visible"
+		android:theme="@style/AppTheme"
+		android:layout_marginTop="80dp"
+		android:layout_below="@+id/serial"
+		android:layout_alignStart="@+id/serial" />
+
+
+
+	<ImageView
+		android:id="@+id/connect"
+		android:layout_width="50dip"
+		android:layout_height="50dip"
+		android:src="@drawable/connect"
+		android:visibility="visible"
+		android:scaleType="centerInside"
+		android:contentDescription="@string/app_name1"
+		android:layout_alignTop="@+id/disconnect"
+		android:layout_toEndOf="@+id/imageView4" />
+
+	<ImageView
+		android:id="@+id/disconnect"
+		android:layout_width="50dip"
+		android:layout_height="50dip"
+		android:src="@drawable/disconnect"
+		android:scaleType="centerInside"
+		android:contentDescription="@string/app_name1"
+		android:layout_above="@+id/line1"
+		android:layout_alignEnd="@+id/usuario"
+		android:layout_marginBottom="28dp"
+		android:layout_marginRight="30dp" />
+
+	<ImageView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/imageView4"
+		android:src="@drawable/titlebar_background"
+		android:layout_alignParentStart="false"
+		android:layout_toStartOf="@+id/disconnect" />
+
+
+	<TextView
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/mensaje"
+		android:layout_above="@+id/Titulo"
+		android:layout_marginBottom="23dp"
+		android:layout_marginLeft="15dp"
+		android:layout_alignEnd="@+id/disconnect"
+		android:textColor="#2fb677" />
+
+	<ImageView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/iconUsrOk"
+		android:visibility="gone"
+		android:src="@drawable/checked_theuser_13237"
+		android:layout_alignStart="@+id/iconUsr"
+		android:layout_above="@+id/expdate"
+		android:layout_toStartOf="@+id/expdate"
+		android:layout_alignTop="@+id/iconUsr"
+		android:layout_alignEnd="@+id/iconUsr" />
+
+	<ImageView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/iconUsr"
+		android:src="@drawable/check_usr"
+		android:layout_marginStart="21dp"
+		android:layout_alignBottom="@+id/serial"
+		android:visibility="visible" />
+
+	<ImageView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/iconCard"
+		android:src="@drawable/card"
+		android:layout_alignTop="@+id/Titulo"
+		android:layout_alignStart="@+id/iconUsr"
+		android:layout_alignBottom="@+id/holder"
+		android:layout_alignEnd="@+id/iconUsr" />
+
+	<TextView
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/error"
+		android:layout_below="@+id/holder"
+		android:layout_alignStart="@+id/iconCard"
+		android:layout_marginTop="26dp"
+		android:layout_marginRight="15dp"
+		android:textColor="@color/colorAccent" />
+
+	<ImageButton
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/btnReadCard"
+		android:src="@drawable/bote"
+		android:layout_below="@+id/error"
+		android:layout_alignEnd="@+id/mensaje" />
+
+
+</RelativeLayout>

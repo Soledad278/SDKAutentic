@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content"
+    android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical"
+    tools:context="com.tesis.autentic.ui.BuscaSitios"
+    android:background="@android:color/white">
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/relativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@android:color/white" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@drawable/titlebar_background"
+        android:layout_alignParentTop="true" />
+
+    <View android:id="@+id/line1"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/switch_thumb_disabled_material_light"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentStart="false" />
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ListViewSitio"
+        android:layout_alignParentStart="false"
+        android:footerDividersEnabled="false"
+        android:longClickable="false"
+        android:layout_alignParentEnd="false"
+        android:layout_below="@+id/line1"
+        android:minHeight="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="20dp">
+    </ListView>
+
+
+</RelativeLayout>
